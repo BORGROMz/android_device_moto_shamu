@@ -163,7 +163,8 @@ PRODUCT_PACKAGES += \
     libaudio-resampler
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.audio.monitorRotation=true
+    ro.audio.monitorRotation=true \
+    net.tethering.noprovisioning=true
 
 # Audio effects
 PRODUCT_PACKAGES += \
@@ -187,7 +188,9 @@ PRODUCT_PACKAGES += \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-    e2fsck
+    e2fsck \
+    fsck.f2fs \
+    mkfs.f2fs
 
 # for off charging mode
 PRODUCT_PACKAGES += \
